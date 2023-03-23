@@ -38,15 +38,21 @@ namespace L10
             Car lada = new Car(); //создаём объект
             Car matiz = new Car();
             Car reno = new Car();
+            Car kia = new Car();
+            Car toyota = new Car();
 
             lada.CarName = "Lada Granta"; //даём ему имя
             matiz.CarName = "Daewoo Matiz";
             reno.CarName = "Renault Logan";
+            kia.CarName = "Kia Motors";
+            toyota.CarName = "Toyota Corolla";
 
             Garage garage = new Garage();
             garage.garage.Add(lada); //кидаем в гараж
             garage.garage.Add(matiz);
             garage.garage.Add(reno);
+            garage.garage.Add(kia);
+            garage.garage.Add(toyota);
 
             Washer washer = new Washer();
 
@@ -54,7 +60,9 @@ namespace L10
             {
                 washer.washCars(car); //моем
             }
-            Console.ReadKey();
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("Все автомобили чистенькие");
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }
