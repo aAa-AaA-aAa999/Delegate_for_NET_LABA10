@@ -15,7 +15,7 @@ namespace L10
     }
     public class Garage //2
     {
-        public List<Car> garage = new List<Car>(); //коллекция автомобилей 4
+        public List<Car> garage = new List<Car>(); //коллекция автомобилей
 
     }
     public class Washer //3
