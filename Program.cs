@@ -19,9 +19,9 @@ namespace L10
     }
     public class Washer //3
     {
-        public delegate void WashCars(Car car); //6
+        public delegate void WashCars(Car car); //делегат
 
-        public WashCars washCars = new WashCars(wash);
+        public WashCars washCars = new WashCars(wash); //6
         public static void wash(Car car) //5
         {
             Console.WriteLine($" Производится промыв автомобиля {car.CarName}...");
