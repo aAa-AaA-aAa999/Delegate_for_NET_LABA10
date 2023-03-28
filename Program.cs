@@ -15,7 +15,7 @@ namespace L10
     }
     public class Garage //2
     {
-        public List<Car> garage = new List<Car>(); //коллекция автомобилей
+        public List<Car> listgarage = new List<Car>(); //коллекция автомобилей
 
     }
     public class Washer //3
@@ -48,15 +48,15 @@ namespace L10
             toyota.CarName = "Toyota Corolla";
 
             Garage garage = new Garage();
-            garage.garage.Add(lada); //кидаем в гараж
-            garage.garage.Add(matiz);
-            garage.garage.Add(reno);
-            garage.garage.Add(kia);
-            garage.garage.Add(toyota);
+            garage.listgarage.Add(lada); //кидаем в гараж
+            garage.listgarage.Add(matiz);
+            garage.listgarage.Add(reno);
+            garage.listgarage.Add(kia);
+            garage.listgarage.Add(toyota);
 
             Washer washer = new Washer();
 
-            foreach (var car in garage.garage)
+            foreach (var car in garage.listgarage)
             {
                 washer.washCars(car); //моем
             }
