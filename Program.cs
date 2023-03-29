@@ -11,7 +11,6 @@ namespace L10
     public class Car //1
     {
         public string CarName { get; set; } //название машины
-
     }
     public class Garage //2
     {
